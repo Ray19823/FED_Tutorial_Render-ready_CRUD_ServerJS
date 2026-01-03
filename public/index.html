@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goals Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen p-6">
+  <main class="max-w-3xl mx-auto">
+    <h1 class="text-3xl font-bold text-center mb-8">Goals Manager</h1>
+
+    <!-- Add New Goal -->
+    <section class="bg-white rounded-lg shadow p-6 mb-6">
+      <h2 class="text-xl font-semibold mb-4">Add New Goal</h2>
+
+      <label class="block text-sm font-medium mb-2">Goal Title</label>
+      <input id="goalTitle" class="w-full border rounded px-3 py-2 mb-4" placeholder="e.g. Learn Express" />
+
+      <button id="addBtn" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        Add Goal
+      </button>
+      <p id="msg" class="text-sm text-gray-600 mt-3"></p>
+    </section>
+
+    <!-- Goals List -->
+    <section class="bg-white rounded-lg shadow p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-semibold">Your Goals</h2>
+        <button id="refreshBtn" class="border px-3 py-2 rounded hover:bg-gray-50">
+          Refresh
+        </button>
+      </div>
+
+      <ul id="goalsList" class="space-y-3"></ul>
+    </section>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>

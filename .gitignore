@@ -1,0 +1,9 @@
+# Node.js
+node_modules/
+
+# Environment secrets
+.env
+.env.*
+
+# macOS system files
+.DS_Store
