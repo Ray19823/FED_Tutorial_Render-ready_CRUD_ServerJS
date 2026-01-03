@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: FED_Tutorial_Render-ready_CRUD_ServerJS
+    env: node
+    plan: free
+    autoDeploy: true
+    buildCommand: npm install
+    startCommand: npm start
