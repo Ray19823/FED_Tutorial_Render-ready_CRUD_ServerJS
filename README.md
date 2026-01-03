@@ -27,3 +27,9 @@ Notes:
 - Render provides `PORT`; the server uses `process.env.PORT` automatically.
 - Keep secrets in Render environment variables; `.env` is ignored.
 - Free plan is set in `render.yaml`; adjust as needed.
+
+## Auto Deploy & Health Check
+- **Auto Deploy**: Enable Auto Deploy for the `main` branch in Render → Service → Settings. New pushes to `main` will trigger a deploy.
+- **Health endpoint**: `GET /health` returns `{ status, uptime, timestamp }` for simple monitoring. Example:
+	- Local: `http://localhost:3000/health`
+	- Render: `https://YOUR-SERVICE.onrender.com/health`
