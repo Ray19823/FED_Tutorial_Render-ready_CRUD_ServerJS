@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: FED_Tutorial_Render-ready_CRUD_ServerJS
+    name: fed-tutorial-render-ready-crud-serverjs
     env: node
     plan: free
     autoDeploy: true

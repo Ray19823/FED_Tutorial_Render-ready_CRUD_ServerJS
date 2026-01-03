@@ -15,9 +15,13 @@ let goals = [
   { id: 2, title: "Build a CRUD API" },
 ];
 
-// Health check
+// Basic routes
 app.get("/api/greet", (req, res) => {
   res.json({ message: "Hello from Node.js API!" });
+});
+
+app.get("/health", (req, res) => {
+  res.json({ status: "ok", uptime: process.uptime(), timestamp: new Date().toISOString() });
 });
 
 // CRUD routes
